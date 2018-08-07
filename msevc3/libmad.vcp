@@ -1,0 +1,596 @@
+# Microsoft eMbedded Visual Tools Project File - Name="libmad" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE x86) Static Library" 0x8304
+# TARGTYPE "Win32 (WCE ARM) Static Library" 0x8504
+
+CFG=libmad - Win32 (WCE ARM) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "libmad.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "libmad.vcn" CFG="libmad - Win32 (WCE ARM) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "libmad - Win32 (WCE ARM) Release" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "libmad - Win32 (WCE ARM) Debug" (based on "Win32 (WCE ARM) Static Library")
+!MESSAGE "libmad - Win32 (WCE x86) Debug" (based on "Win32 (WCE x86) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMRel"
+# PROP BASE Intermediate_Dir "ARMRel"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "obj/arm_ppc02_rel"
+# PROP Intermediate_Dir "obj/arm_ppc02_rel"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Oxs /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /O2 /I "./" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "HAVE_CONFIG_H" /D "ASO_ZEROCHECK" /D "FPM_DEFAULT" /YX /Oxs /M$(CECrtMT) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_ppc02_rel/libmad.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMDbg"
+# PROP BASE Intermediate_Dir "ARMDbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "obj/arm_ppc02_deb"
+# PROP Intermediate_Dir "obj/arm_ppc02_deb"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "./" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "ASO_ZEROCHECK" /D "HAVE_CONFIG_H" /D "FPM_DEFAULT" /YX /M$(CECrtMTDebug) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"../../lib/arm_ppc02_deb/libmad.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "X86Dbg"
+# PROP BASE Intermediate_Dir "X86Dbg"
+# PROP BASE CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86Dbg"
+# PROP Intermediate_Dir "X86Dbg"
+# PROP CPU_ID "{D6518FFC-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "ASO_ZEROCHECK" /D "HAVE_CONFIG_H" /D "FPM_DEFAULT" /YX /Gs8192 /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "./" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "ASO_ZEROCHECK" /D "HAVE_CONFIG_H" /D "FPM_DEFAULT" /YX /Gs8192 /M$(CECrtMTDebug) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo /out:"../../../lib/arm_deb/libmad.lib"
+# ADD LIB32 /nologo /out:"../../../lib/wce_emu/libmad.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "libmad - Win32 (WCE ARM) Release"
+# Name "libmad - Win32 (WCE ARM) Debug"
+# Name "libmad - Win32 (WCE x86) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=..\bit.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_BIT_C=\
+	"..\bit.h"\
+	"..\global.h"\
+	
+NODEP_CPP_BIT_C=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_BIT_C=\
+	"..\bit.h"\
+	"..\global.h"\
+	
+NODEP_CPP_BIT_C=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_BIT_C=\
+	"..\bit.h"\
+	"..\global.h"\
+	
+NODEP_CPP_BIT_C=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\decoder.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_DECOD=\
+	"..\bit.h"\
+	"..\decoder.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_DECOD=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_DECOD=\
+	"..\bit.h"\
+	"..\decoder.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_DECOD=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_DECOD=\
+	"..\bit.h"\
+	"..\decoder.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_DECOD=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\fixed.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_FIXED=\
+	"..\fixed.h"\
+	"..\global.h"\
+	
+NODEP_CPP_FIXED=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FIXED=\
+	"..\fixed.h"\
+	"..\global.h"\
+	
+NODEP_CPP_FIXED=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_FIXED=\
+	"..\fixed.h"\
+	"..\global.h"\
+	
+NODEP_CPP_FIXED=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\frame.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_FRAME=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\layer3.h"\
+	"..\stream.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_FRAME=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_FRAME=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\layer3.h"\
+	"..\stream.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_FRAME=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_FRAME=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\layer3.h"\
+	"..\stream.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_FRAME=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\huffman.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_HUFFM=\
+	"..\global.h"\
+	"..\huffman.h"\
+	
+NODEP_CPP_HUFFM=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_HUFFM=\
+	"..\global.h"\
+	"..\huffman.h"\
+	
+NODEP_CPP_HUFFM=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_HUFFM=\
+	"..\global.h"\
+	"..\huffman.h"\
+	
+NODEP_CPP_HUFFM=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\layer12.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_LAYER=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\qc_table.dat"\
+	"..\sf_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_LAYER=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\qc_table.dat"\
+	"..\sf_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_LAYER=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\layer12.h"\
+	"..\qc_table.dat"\
+	"..\sf_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\layer3.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_LAYER3=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\huffman.h"\
+	"..\imdct_s.dat"\
+	"..\layer3.h"\
+	"..\rq_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER3=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_LAYER3=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\huffman.h"\
+	"..\imdct_s.dat"\
+	"..\layer3.h"\
+	"..\rq_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER3=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_LAYER3=\
+	"..\bit.h"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\huffman.h"\
+	"..\imdct_s.dat"\
+	"..\layer3.h"\
+	"..\rq_table.dat"\
+	"..\stream.h"\
+	
+NODEP_CPP_LAYER3=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\stream.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_STREA=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	
+NODEP_CPP_STREA=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_STREA=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	
+NODEP_CPP_STREA=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_STREA=\
+	"..\bit.h"\
+	"..\global.h"\
+	"..\stream.h"\
+	
+NODEP_CPP_STREA=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\synth.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_SYNTH=\
+	"..\D.dat"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_SYNTH=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_SYNTH=\
+	"..\D.dat"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_SYNTH=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_SYNTH=\
+	"..\D.dat"\
+	"..\fixed.h"\
+	"..\global.h"\
+	"..\synth.h"\
+	
+NODEP_CPP_SYNTH=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\timer.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_TIMER=\
+	"..\global.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_TIMER=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_TIMER=\
+	"..\global.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_TIMER=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_TIMER=\
+	"..\global.h"\
+	"..\timer.h"\
+	
+NODEP_CPP_TIMER=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=..\version.c
+
+!IF  "$(CFG)" == "libmad - Win32 (WCE ARM) Release"
+
+DEP_CPP_VERSI=\
+	"..\global.h"\
+	
+NODEP_CPP_VERSI=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE ARM) Debug"
+
+DEP_CPP_VERSI=\
+	"..\global.h"\
+	
+NODEP_CPP_VERSI=\
+	"..\config.h"\
+	
+
+!ELSEIF  "$(CFG)" == "libmad - Win32 (WCE x86) Debug"
+
+DEP_CPP_VERSI=\
+	"..\global.h"\
+	
+NODEP_CPP_VERSI=\
+	"..\config.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# End Group
+# End Target
+# End Project
