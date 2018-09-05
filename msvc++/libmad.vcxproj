@@ -147,6 +147,7 @@
       <ObjectFileName>.\obj/w32_rel/</ObjectFileName>
       <ProgramDataBaseFileName>.\obj/w32_rel/</ProgramDataBaseFileName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>None</DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
