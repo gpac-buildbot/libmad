@@ -2849,7 +2849,7 @@ ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
 
 
-am__api_version="1.8"
+am__api_version="1.9"
 ac_aux_dir=
 for ac_dir in "$srcdir" "$srcdir/.." "$srcdir/../.."; do
   for ac_t in install-sh install.sh shtool; do
@@ -18721,8 +18721,8 @@ then
     case "$optimize" in
 	-O|"-O "*)
 	    optimize="-O"
-	    : #-fforce-mem deprecated since gcc 4.2
-	    : #optimize="$optimize -fforce-mem"
+	    : # deprecated since gcc 4.2
+	    : #optimize="$optimize "
 	    optimize="$optimize -fforce-addr"
 	    : #x optimize="$optimize -finline-functions"
 	    : #- optimize="$optimize -fstrength-reduce"
